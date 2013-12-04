@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Rio de Janeiro Docker Meetup #1</title>
+
+    <meta name="description" content="Rio de Janeiro Docker Meetup #1">
+    <meta name="author" content="Zaiste">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/zaiste.css" id="theme">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+        <section>
+          <img src="img/docker-logo.png"/>
+        </section>
+
+        <section>
+          <h1>Docker 101</h1>
+          <p>Rio de Janeiro Docker Meetup #1</p>
+          <small>November 26, 2013</small>
+          <hr/>
+          <small><a href='http://twitter.com/zaiste'>@zaiste</a></small>
+        </section>
+
+        <section class="title" data-background="#009DC9">
+          <h1>What is Docker</h1>
+        </section>
+
+        <section>
+          <p>open-source abstraction that <strong>automates</strong> the deployment of any application as a <u>lightweight</u>, <u>portable</u>, <u>self-sufficient</u> <strong>container</strong> that will run everywhere</p>
+        </section>
+
+
+
+        <section class="title" data-background="#009DC9">
+          <h1>Background</h1>
+        </section>
+
+        <section>
+          <h2>Evolution: 1</h2>
+          <h4>Monolithic / Heterogenous</h4>
+        </section>
+
+        <section>
+          <h2>Evolution: 2</h2>
+          <h4>Single Server / Cloud (Private, Public)</h4>
+        </section>
+
+        <section>
+          <h2>Evolution: 3</h2>
+          <h4>Thick Client / Thin Client (Mobile, Tablet)</h4>
+        </section>
+
+        <section>
+          <h2>Origins</h2>
+          <h4>dotCloud Infrustructure</h4>
+        </section>
+
+        <section>
+          <h2>Software</h2>
+          <h4>Database / Worker / Queue / Framework</h4>
+        </section>
+
+        <section>
+          <h2>Hardware</h2>
+          <h4>Dev Server / Production Server / Programmer Machine</h4>
+        </section>
+
+        <section class="title" data-background="#009DC9">
+          <h1>Container</h1>
+        </section>
+
+        <section>
+          <h2>Unfication</h2>
+          <h4>Logistics Analogy</h4>
+        </section>
+
+        <section>
+          <h2>Container</h2>
+          <h4>Group of processes put together in a isolated env</h4>
+        </section>
+
+        <section>
+          <img src="img/docker_arch.svg"/>
+        </section>
+
+        <section>
+          <h2>Lightweight VM</h2>
+          <h4>High-level Analogy</h4>
+        </section>
+
+        <section>
+          <h2>chroot on steroids</h2>
+          <h4>Low-level Analogy</h4>
+        </section>
+
+        <section class="title" data-background="#009DC9">
+          <h1>Inside</h1>
+        </section>
+
+        <section>
+          <h2>LXC</h2>
+          <h4>Abstraction over Linux Containers</h4>
+          <small>LXC let’s you run Linux inside Linux.</small>
+        </section>
+
+        <section>
+          <h2>Isolation</h2>
+          <h4>Resource / Network / Content</h4>
+        </section>
+
+        <section>
+          <h2>Unified Operations Set</h2>
+          <h4>Run / Start / Stop</h4>
+        </section>
+
+        <section class="title" data-background="#009DC9">
+          <h1>Advantages</h1>
+        </section>
+
+        <section>
+          <h2>Efficiency</h2>
+          <h4>Just a process</h4>
+          <small>VM without VM overhead / Boots in seconds</small>
+        </section>
+
+        <section>
+          <h2>Encapsulation</h2>
+          <h4>Portable, self-contained &amp; safe runtime</h4>
+        </section>
+
+        <section>
+          <h2>Developer Perspective</h2>
+          <h4>Build once, Run anywhere</h4>
+        </section>
+
+        <section>
+          <h2>Sysadmin Perspective</h2>
+          <h4>Configure once, Run anything </h4>
+        </section>
+
+        <section class="title" data-background="#009DC9">
+          <h1>Demo</h1>
+        </section>
+
+        <section>
+          <h2>Stats</h2>
+          <p>Github 7400+ / Contributors 165+</p>
+          <small>100's of projects built on top of Docker</small>
+        </section>
+
+        <section>
+          <h2>Use Cases</h2>
+          <p>Private PaaS / Deployment / Continuous Integration</p>
+        </section>
+
+        <section>
+          <h2>More</h2>
+          <p>
+            <a href='http://www.docker.io/'>Website</a> /
+            <a href='https://github.com/dotcloud/docker'>GitHub</a> /
+            <a href='https://groups.google.com/forum/#!forum/docker-user'>Google Group</a> /
+            IRC #docker
+          </p>
+        </section>
+
+
+        <section>
+          <h2>Q? / Thank you</h2>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
